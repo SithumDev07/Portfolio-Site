@@ -190,6 +190,75 @@ section {
   margin-bottom: 2em;
 }
 
+footer {
+  background-color: #343434;
+}
+
+footer .footer-container {
+  padding: 2em;
+}
+
+footer .footer-container .logo {
+  color: #5e89ef;
+}
+
+footer .footer-container ul {
+  margin-top: 1em;
+}
+
+footer .footer-container ul a {
+  color: #f2fcff;
+}
+
+footer .copyright {
+  color: #f2fcff;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+@media only screen and (max-width: 320px) {
+  footer .copyright {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-container .logo {
+    font-size: 1.2em;
+  }
+  footer .footer-container nav {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   header .logo {
     font-size: 2em;
@@ -240,6 +309,12 @@ section {
   }
   .portfolio-container img {
     margin-left: 2em;
+  }
+  footer .footer-container .logo {
+    font-size: 2em;
+  }
+  footer .footer-container nav a {
+    font-size: 1.5em;
   }
 }
 
@@ -332,6 +407,9 @@ section {
 }
 
 @media only screen and (min-width: 1250px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     padding: 2em 2em 2em 0;
   }
@@ -343,6 +421,26 @@ section {
   }
   .hero .content {
     padding: 6em 8em 6em 10em;
+  }
+  footer {
+    position: relative;
+  }
+  footer .footer-container {
+    width: 50%;
+  }
+  footer .footer-container .logo {
+    font-size: 1.6em;
+  }
+  footer .footer-container nav a {
+    font-size: 1em;
+  }
+  footer .footer-container .hero-design {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(120%, -45%);
+            transform: translate(120%, -45%);
   }
 }
 
